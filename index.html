@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Calculator | HL</title>
+</head>
+
+<body>
+    
+  <form class="calculator" name="cal">
+      <span style=" border: 1px solid rgba(95, 214, 165, 0.1); grid-column:span 4; width: 240px; font-size: 30px; border-radius: 10px 10px 0 0;" >SMIT Hyderabad</span>
+        <input class="value" type="text" name="txt" readonly>
+        <span class="num clear" type="text" onclick="document.cal.txt.value =''">c</span>
+        <span class="num" type="text" onclick="document.cal.txt.value +='/'">/</span>
+        <span class="num" type="text" onclick="document.cal.txt.value +='*'">*</span>
+        <span class="num" type="text" onclick="document.cal.txt.value +='7'">7</span>
+        <span class="num" type="text" onclick="document.cal.txt.value +='8'">8</span>
+        <span class="num" type="text" onclick="document.cal.txt.value +='9'">9</span>
+        <span class="num" type="text" onclick="document.cal.txt.value +='-'">-</span>
+        <span class="num" type="text" onclick="document.cal.txt.value +='4'">4</span>
+        <span class="num" type="text" onclick="document.cal.txt.value +='5'">5</span>
+        <span class="num" type="text" onclick="document.cal.txt.value +='6'">6</span>
+        <span class="num plus" type="text" onclick="document.cal.txt.value +='+'">+</span>
+        <span class="num" type="text" onclick="document.cal.txt.value +='3'">3</span>
+        <span class="num" type="text" onclick="document.cal.txt.value +='2'">2</span>
+        <span class="num" type="text" onclick="document.cal.txt.value +='1'">1</span>
+        <span class="num" type="text" onclick="document.cal.txt.value +='0'">0</span>
+        <span class="num" type="text" onclick="document.cal.txt.value +='00'">00</span>
+        <span class="num" type="text" onclick="document.cal.txt.value +='.'">.</span>
+        <span class="num equal" type="text" onclick="document.cal.txt.value =eval(cal.txt.value)">=</span>
+
+    </form>
+
+</body>
+
+</html>
